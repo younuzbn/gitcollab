@@ -8,10 +8,35 @@ import SwiftUI
 
 struct VishnuView: View {
     var body: some View {
-        VStack {
-
+        HStack {
+            Image("car2")
+                .resizable()
+                .cornerRadius(80)
+                .frame(width: 150, height: 150)
         }
-        .navigationTitle("Vishnu")
-        .navigationBarTitleDisplayMode(.inline)
+        
+        
+        VStack {
+            Image("bmw")
+                .resizable()
+                .cornerRadius(40)
+                .aspectRatio(contentMode: .fit)
+                .padding(.all)
+           
+                
+            }
+            Text("BMW")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(Color.black)
+            
+        }
+        
+            
+        
     }
+
+
+#Preview {
+    VishnuView()
 }
