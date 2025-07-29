@@ -22,7 +22,7 @@ struct ContentView: View {
                         ButtonView(title: "Adarsh", color: .green)
                     }
                     
-                    NavigationLink(destination: SubinView()) {
+                    NavigationLink(destination: SwiftUIView()) {
                         ButtonView(title: "Subin", color: .orange)
                     }
                 }
